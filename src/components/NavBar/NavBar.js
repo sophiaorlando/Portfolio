@@ -7,7 +7,7 @@ import './NavBar.css'
 function myNavBar() {
   return (
     <>
-      <Navbar collapseOnSelect expand="md" variant="dark" className="animate-navbar nav-theme justify-content-between">
+      <Navbar collapseOnSelect expand="md" variant="dark" fixed="top" className="animate-navbar nav-theme justify-content-between">
         <Navbar.Brand href="#home">
          <img src= {Logo} alt="My Portfolio Logo" className="logo"/>
           

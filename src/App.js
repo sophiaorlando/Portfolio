@@ -2,6 +2,9 @@
 import React from 'react-bootstrap'
 //components
 import NavBar from "./components/NavBar/NavBar"
+import Carousel from './components/Carousel/Carousel'
+import TitleMessage from './components/TitleMessage/TitleMessage'
+
 import './App.css'
 
 
@@ -9,9 +12,9 @@ function App() {
   return (
     <div>
 
-<NavBar/>
-
-      My portfolio
+      <NavBar />
+      <Carousel />
+      <TitleMessage/>
     </div>
 
   );
