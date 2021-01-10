@@ -9,6 +9,7 @@ import NavBar from "./components/NavBar/NavBar"
 import Carousel from './components/Carousel/Carousel'
 import TitleMessage from './components/TitleMessage/TitleMessage'
 import AboutMe from './pages/AboutMe/AboutMe'
+import Skills from './pages/Skills/Skills'
 
 
 import './App.css'
@@ -16,7 +17,7 @@ import './App.css'
 
 function App() {
   return (
-    <div className="App" style={{position: "relative"}}>
+    <div className="App" style={{ position: "relative" }}>
 
       <NavBar />
       <Carousel />
@@ -30,16 +31,28 @@ function App() {
           bgImageAlt=""
           strength={-200}
           className="parallax_background"
-          >
-          <Container className= "container-box" rounded>
+        >
+          <Container className="about-me-container-box" rounded>
             <Slide left duration={900}>
-            <AboutMe />
+              <AboutMe />
 
             </Slide>
           </Container>
 
         </Parallax>
       </div>
+      {/* Skills */}
+
+      <div>
+        <Container className="container-box" rounded>
+          <Slide left duration={900}>
+            <Skills />
+          </Slide>
+        </Container>
+
+
+      </div>
+
     </div>
 
   );
