@@ -10,6 +10,12 @@ import Carousel from './components/Carousel/Carousel'
 import TitleMessage from './components/TitleMessage/TitleMessage'
 import AboutMe from './pages/AboutMe/AboutMe'
 import Skills from './pages/Skills/Skills'
+import Projects from './components/Projects/Projects'
+import StarWarsCrawl from './components/StarWarsCrawl/StarWarsCrawl'
+
+
+
+
 
 
 import './App.css'
@@ -20,8 +26,41 @@ function App() {
     <div className="App" style={{ position: "relative" }}>
 
       <NavBar />
-      <Carousel />
-      <TitleMessage />
+
+              <div>
+        <Container className="container-box" rounded>
+          <Slide left duration={900}>
+          <StarWarsCrawl />
+        
+            </Slide>
+        </Container>
+
+
+      </div>
+
+
+
+
+      <div>
+        <Container className="container-box" rounded>
+          <Slide left duration={900}>
+            <Carousel />
+            <TitleMessage />          
+            </Slide>
+        </Container>
+
+
+      </div>
+
+      <div>
+        <Container className="container-box" rounded>
+          <Slide left duration={900}>
+            <AboutMe />
+          </Slide>
+        </Container>
+
+
+      </div>
 
       {/* About Me Section */}
       <div>
@@ -34,7 +73,7 @@ function App() {
         >
           <Container className="about-me-container-box" rounded>
             <Slide left duration={900}>
-              <AboutMe />
+              {/* <AboutMe /> */}
 
             </Slide>
           </Container>
@@ -52,6 +91,17 @@ function App() {
 
 
       </div>
+      {/* Projects */}
+      <div>
+        <Container className="container-box" rounded>
+          <Slide left duration={900}>
+            <Projects />
+          </Slide>
+        </Container>
+
+
+      </div>
+
 
     </div>
 

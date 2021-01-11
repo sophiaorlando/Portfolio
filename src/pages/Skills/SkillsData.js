@@ -1,31 +1,58 @@
+//langugaes
 import L_HTML5 from "../../assets/img/skills/html-5.svg";
 import L_CSS3 from "../../assets/img/skills/css3.svg";
 import L_SASS from "../../assets/img/skills/sass-1.svg";
-import L_BOOTSTRAP from "../../assets/img/skills/bootstrap-4.svg";
-import L_REACT from "../../assets/img/skills/react.svg";
-import L_REDUX from "../../assets/img/skills/redux.svg";
-import L_REACT_ROUTER from "../../assets/img/skills/react-router.svg";
-import L_MATERIALUI from "../../assets/img/skills/material-ui-1.svg";
-import L_REACT_BOOTSTRAP from "../../assets/img/skills/react-bootstrap.svg";
-import L_STYLED_COMPONENTS from "../../assets/img/skills/styled-components.svg";
-import L_NODE_JS from "../../assets/img/skills/nodejs.svg";
-import L_EXPRESS from "../../assets/img/skills/express.svg";
-import L_DJANGO from "../../assets/img/skills/django.svg";
-import L_FLASK from "../../assets/img/skills/flask.svg";
-import L_MONGODB from "../../assets/img/skills/mongodb.svg";
-import L_POSTGRESQL from "../../assets/img/skills/postgresql.svg";
-import L_MSSQL from "../../assets/img/skills/mssql.svg";
-import L_GIT from "../../assets/img/skills/git-icon.svg";
-import L_HEROKU from "../../assets/img/skills/heroku.svg";
-import L_DIGITAL_OCEAN from "../../assets/img/skills/digital-ocean.svg";
-import L_GITHUB_PAGES from "../../assets/img/skills/github.svg";
 import L_JAVASCRIPT from "../../assets/img/skills/javascript.svg";
 import L_TYPESCRIPT from "../../assets/img/skills/typescript.svg";
-import L_GOLANG from "../../assets/img/skills/go-6.svg";
-import L_PYTHON from "../../assets/img/skills/python.svg";
+
+//frameworks
+import L_BOOTSTRAP from "../../assets/img/skills/bootstrap-4.svg";
+import L_MOMENTJS from '../../assets/img/skills/momentjs.svg'
+import L_ANGULAR from '../../assets/img/skills/angular-icon-1.svg'
+import L_REACT_BOOTSTRAP from "../../assets/img/skills/react-bootstrap.svg";
+import L_REACT from "../../assets/img/skills/react.svg";
+import L_REACT_ROUTER from "../../assets/img/skills/react-router.svg";
+import L_MATERIALUI from "../../assets/img/skills/material-ui-1.svg";
+
+//libraries
+import L_JQUERY from '../../assets/img/skills/jquery-1.svg'
+import L_REDUX from "../../assets/img/skills/redux.svg";
+
+
+//backend
+import L_NODE_JS from "../../assets/img/skills/nodejs.svg";
+import L_EXPRESS from "../../assets/img/skills/express.svg";
+
+//databases
+import L_MONGODB from "../../assets/img/skills/mongodb.svg";
+import L_MYSQL from "../../assets/img/skills/mysql.svg";
+
+//Platforms
+import L_WINDOWS from '../../assets/img/skills/windows.svg'
+import L_MACOS from '../../assets/img/skills/macos.svg'
+import L_TERMINAL from '../../assets/img/skills/terminal-1.svg'
+import L_HEROKU from "../../assets/img/skills/heroku.svg";
+import L_GOOGLECLOUD from '../../assets/img/skills/google-cloud-1.svg'
+import L_FIREBASE from '../../assets/img/skills/firebase-1.svg'
+import L_GITHUB_PAGES from "../../assets/img/skills/github.svg";
+
+//other
+import L_ADOBE from '../../assets/img/skills/adobe-2.svg'
+import L_ADOBEPHOTOSHOP from '../../assets/img/skills/photoshop-cc.svg'
+import L_STYLED_COMPONENTS from "../../assets/img/skills/styled-components.svg";
+
+
+
+
+
+
+
+
+
+
 
 export const skills = {
-  frontend: [
+  languages: [
     {
       link: "https://en.wikipedia.org/wiki/HTML5",
       imgAltText: "HTML 5",
@@ -51,10 +78,32 @@ export const skills = {
       skillName: "Sass",
     },
     {
+      link: "https://www.typescriptlang.org/",
+      imgAltText: "TypeScript",
+      imgSrc: L_TYPESCRIPT,
+      skillName: "TypeScript",
+    },
+
+  ],
+  frameworks: [
+    {
       link: "https://getbootstrap.com/",
       imgAltText: "Bootstrap",
       imgSrc: L_BOOTSTRAP,
       skillName: "Bootstrap",
+    },
+    {
+      link: "https://react-bootstrap.github.io/",
+      imgAltText: "React Bootstrap",
+      imgSrc: L_REACT_BOOTSTRAP,
+      skillName: "React Bootstrap",
+    },
+
+    {
+      link: "https://getbootstrap.com/",
+      imgAltText: "MomentJS",
+      imgSrc: L_MOMENTJS,
+      skillName: "MomentJS",
     },
     {
       link: "https://reactjs.org/",
@@ -63,45 +112,41 @@ export const skills = {
       skillName: "React JS",
     },
     {
-      link: "https://redux.js.org/",
-      imgAltText: "Redux",
-      imgSrc: L_REDUX,
-      skillName: "Redux",
-    },
-    {
       link: "https://reacttraining.com/react-router/",
       imgAltText: "React Router",
       imgSrc: L_REACT_ROUTER,
       skillName: "React Router",
     },
+
+    {
+      link: "https://reactjs.org/",
+      imgAltText: "Angular",
+      imgSrc: L_ANGULAR,
+      skillName: "Angular",
+    },
+
     {
       link: "https://material-ui.com/",
       imgAltText: "Material-UI",
       imgSrc: L_MATERIALUI,
       skillName: "Material-UI",
     },
-    {
-      link: "https://react-bootstrap.github.io/",
-      imgAltText: "React Bootstrap",
-      imgSrc: L_REACT_BOOTSTRAP,
-      skillName: "React Bootstrap",
-    },
-    {
-      link: "https://styled-components.com/",
-      imgAltText: "styled-components",
-      imgSrc: L_STYLED_COMPONENTS,
-      skillName: "styled-components",
-    },
-    
   ],
-
-  backend: [
+  libraries: [
     {
-      link: "https://nodejs.org/en/",
-      imgAltText: "Node.js",
-      imgSrc: L_NODE_JS,
-      skillName: "Node.js",
+      link: "https://getbootstrap.com/",
+      imgAltText: "jQuery",
+      imgSrc: L_JQUERY,
+      skillName: "jQuery",
     },
+    {
+      link: "https://redux.js.org/",
+      imgAltText: "Redux",
+      imgSrc: L_REDUX,
+      skillName: "Redux",
+    },
+  ],
+  backend: [
     {
       link: "https://expressjs.com/",
       imgAltText: "Express",
@@ -109,19 +154,45 @@ export const skills = {
       skillName: "Express",
     },
     {
-      link: "https://www.djangoproject.com/",
-      imgAltText: "Django",
-      imgSrc: L_DJANGO,
-      skillName: "Django",
-    },
-    {
-      link: "https://flask.palletsprojects.com/",
-      imgAltText: "Flask",
-      imgSrc: L_FLASK,
-      skillName: "Flask",
+      link: "https://nodejs.org/en/",
+      imgAltText: "Node.js",
+      imgSrc: L_NODE_JS,
+      skillName: "Node.js",
     },
   ],
-  hostingPlatforms: [
+  databases: [
+    {
+      link: "https://www.mongodb.com/",
+      imgAltText: "MongoDB",
+      imgSrc: L_MONGODB,
+      skillName: "MongoDB",
+    },
+    {
+      link: "https://www.microsoft.com/en-us/sql-server/sql-server-2019",
+      imgAltText: "MySQL",
+      imgSrc: L_MYSQL,
+      skillName: "MySQL",
+    },
+  ],
+  platforms: [
+    {
+      link: "https://redux.js.org/",
+      imgAltText: "Windows",
+      imgSrc: L_WINDOWS,
+      skillName: "Windows",
+    },
+    {
+      link: "https://redux.js.org/",
+      imgAltText: "MacOS",
+      imgSrc: L_MACOS,
+      skillName: "MacOS",
+    },
+    {
+      link: "https://redux.js.org/",
+      imgAltText: "Terminal",
+      imgSrc: L_TERMINAL,
+      skillName: "Terminal",
+    },
     {
       link: "https://www.heroku.com/",
       imgAltText: "Heroku",
@@ -129,10 +200,16 @@ export const skills = {
       skillName: "Heroku",
     },
     {
-      link: "https://www.digitalocean.com/",
-      imgAltText: "Digital Ocean",
-      imgSrc: L_DIGITAL_OCEAN,
-      skillName: "Digital Ocean",
+      link: "https://www.heroku.com/",
+      imgAltText: "Google Cloud",
+      imgSrc: L_GOOGLECLOUD,
+      skillName: "Google Cloud",
+    },
+    {
+      link: "https://www.heroku.com/",
+      imgAltText: "Firebase",
+      imgSrc: L_FIREBASE,
+      skillName: "Firebase",
     },
     {
       link: "https://pages.github.com/",
@@ -141,58 +218,31 @@ export const skills = {
       skillName: "GitHub Pages",
     },
   ],
-  programmingLanguages: [
+  other: [
     {
-      link: "https://www.javascript.com/",
-      imgAltText: "JavaScript",
-      imgSrc: L_JAVASCRIPT,
-      skillName: "JavaScript",
+      link: "https://styled-components.com/",
+      imgAltText: "styled-components",
+      imgSrc: L_STYLED_COMPONENTS,
+      skillName: "styled-components",
     },
     {
-      link: "https://www.typescriptlang.org/",
-      imgAltText: "TypeScript",
-      imgSrc: L_TYPESCRIPT,
-      skillName: "TypeScript",
+      link: "https://styled-components.com/",
+      imgAltText: "Adobe",
+      imgSrc: L_ADOBE,
+      skillName: "Adobe",
     },
     {
-      link: "https://www.python.org/",
-      imgAltText: "Python",
-      imgSrc: L_PYTHON,
-      skillName: "Python",
+      link: "https://styled-components.com/",
+      imgAltText: "Adobe Photoshop",
+      imgSrc: L_ADOBEPHOTOSHOP,
+      skillName: "Adobe Photoshop",
     },
-    {
-      link: "https://golang.org/",
-      imgAltText: "Golang",
-      imgSrc: L_GOLANG,
-      skillName: "Golang",
-    },
-  ],
-  databases: [
-    {
-      link: "https://www.postgresql.org/",
-      imgAltText: "PostgreSQL",
-      imgSrc: L_POSTGRESQL,
-      skillName: "PostgreSQL",
-    },
-    {
-      link: "https://www.microsoft.com/en-us/sql-server/sql-server-2019",
-      imgAltText: "MS-SQL",
-      imgSrc: L_MSSQL,
-      skillName: "MS-SQL",
-    },
-    {
-      link: "https://www.mongodb.com/",
-      imgAltText: "MongoDB",
-      imgSrc: L_MONGODB,
-      skillName: "MongoDB",
-    },
-  ],
-  versionControl: [
-    {
-      link: "https://git-scm.com/",
-      imgAltText: "GIT",
-      imgSrc: L_GIT,
-      skillName: "GIT",
-    },
-  ],
+  ]
+
+
+
+
+
+
+    
 };

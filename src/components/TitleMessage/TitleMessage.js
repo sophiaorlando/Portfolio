@@ -5,10 +5,10 @@ import styled from "styled-components";
 
 const MyTitleMessage = styled.h1`
   position: absolute;
-  width: 100%;
-  top: 22rem;
+  width: 80%;
+  // top: 2rem;
   z-index: 1;
-  margin-top: -125px;
+  margin-top: -505px;
   text-align: center;
   strong {
     font-size: 1.25em;

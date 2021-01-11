@@ -1,5 +1,8 @@
 import React from 'react'
-import { Container, Row, Col, Image, Button } from 'react-bootstrap'
+import { Container, Row, Col, Image, Button, Card } from 'react-bootstrap'
+import MyCarousel from '../../components/Carousel/Carousel'
+import TitleMessage from '../../components/TitleMessage/TitleMessage'
+
 import ProfilePicture from '../../assets/img/profile/profPic.png'
 import './AboutMe.css'
 
@@ -9,82 +12,62 @@ function AboutMe() {
     <>
       <div id="about">
         <div className="about">
-          <h1 className="pt-3 text-center font-details pb-3">ABOUT ME</h1>
+          <style type="text/css">
+            {`
+            .colorType{
+              color:white;
+              border-style: solid;
+              border-color:white;
+            }
+            .colorType:hover{
+              color:yellow;
+            }
+            `}
+
+          </style>
           <Container>
-            <Row className="pt-3 pb-5 align-items-center">
+          <h1 className="pt-3 text-center pb-3">ABOUT ME</h1>
 
-              {/* Profile Picture */}
-              <Col xs={12} md={6}>
-                <Row className="justify-content-center mb-2 mr-2 ">
-                  <Image src={ProfilePicture} className="profile justify-content-end" alt="profilePicture" thumbnail fluid rounded />
-                  <div>
-                    <a href="#contact">
-                      <Button className="m-2" variant="outline-primary">
-                        Contact Me
+                  <Card style={{ wih: "10em" }} className="background">
+                    <Image src={ProfilePicture} className="profile justify-content-end col-lg-4" alt="profilePicture" fluid rounded />
+                    <Card.Body>
+                      <Card.Title style={{color: "white", fontFamily: "'Pathway Gothic One', sans-serif", fontWeight: "400"}}>Sophia Orlando</Card.Title>
+                      <Card.Text>
+                        <ul>
+                          <li className="listItems">
+                            <strong>City:</strong> Greater New York Area
+                          </li>
+                          <li className="listItems">
+                            <strong>Degree:</strong> University of Arizona, Bachelor of Arts in Information Science &amp; Electronic-Society
+                          </li>
+                        </ul>
+                      </Card.Text>
+                      <a href="#contact">
+                        <Button className="m-2" variant="outline colorType">
+                          Contact Me
                       </Button>
-                    </a>
-                  </div>
-                  <div>
-                    <a href="https://docs.google.com/document/d/1xRxno2DbYRoa2em5SR6_FY3u1pGXikhC5WwmlRCsvIg/export?format=pdf" target="_blank" rel="noopener noreferrer">
-                      <Button className="m-2" variant="outline-success">
-                        My Resume
+                      </a>
+                      <a href="https://docs.google.com/document/d/1xRxno2DbYRoa2em5SR6_FY3u1pGXikhC5WwmlRCsvIg/export?format=pdf" target="_blank" rel="noopener noreferrer">
+                        <Button className="m-2" variant="outline colorType">
+                          My Resume
                       </Button>
-                    </a>
-                  </div>
-                  <div>
-                    <a href="https://github.com/sophiaorlando" target="_blank" rel="noopener noreferrer">
-                      <Button className="m-2" variant="outline-dark">
-                        GitHub
+                      </a>
+                      <a href="https://github.com/sophiaorlando" target="_blank" rel="noopener noreferrer">
+                        <Button className="m-2" variant="outline colorType">
+                          GitHub
                       </Button>
-                    </a>
-                  </div>
-                  <div>
-                    <a href="https://www.linkedin.com/in/sophia-m-orlando/" target="_blank" rel="noopener noreferrer">
-                      <Button className="m-2" variant="outline-info">
-                        LinkedIn
+                      </a>
+                      <a href="https://www.linkedin.com/in/sophia-m-orlando/" target="_blank" rel="noopener noreferrer">
+                        <Button className="m-2" variant="outline colorType">
+                          LinkedIn
                       </Button>
-                    </a>
-                  </div>
+                      </a>
 
-                </Row>
-              </Col>
-
-              {/* Description */}
-
-              <Col xs={12} md={6}>
-                <Row className=" align-items-start p-2 my-details rounded">
-                  {/* <div className="star-wars-crawl">
-                  <Crawl
-                    title="Episode X"
-                    subTitle="Sophia Orlando"
-                    text="Contemplating my next move post-college, I decided to dive into the mysterious sea of
-                    coding. The first time I had seen the words,
-                    'Hello, World!', pop up on my computer screen, I haven't looked back. Take a look at my skills and some
-                    of my recent projects."
-                  />
-                  </div> */}
-
-                  <div class="fade"></div>
-
-                  <section class="star-wars">
-                    <div class="crawl">
-                      <div class="title">
-                        <p>Episode X</p>
-                        <h1>Sophia Orlando</h1>
-                      </div>
-
-                      <p>Contemplating my next move post-college, I decided to dive into the mysterious sea of
-                      coding. The first time I had seen the words,
-                      "Hello, World!", pop up on my computer screen, I haven't looked back. Take a look at my skills and some
-      of my recent projects.</p>
-                    </div>
-                  </section>
-                </Row>
-              </Col>
-            </Row>
+                    </Card.Body>
+                  </Card>
           </Container>
+        </div>
       </div>
-    </div>
     </>
   )
 }
