@@ -12,6 +12,8 @@ import AboutMe from './pages/AboutMe/AboutMe'
 import Skills from './pages/Skills/Skills'
 import Projects from './components/Projects/Projects'
 import StarWarsCrawl from './components/StarWarsCrawl/StarWarsCrawl'
+import ProjTabs from './components/ProjTabs/ProjTabs'
+
 
 
 
@@ -92,10 +94,20 @@ function App() {
 
       </div>
       {/* Projects */}
-      <div>
+      {/* <div>
         <Container className="container-box" rounded>
           <Slide left duration={900}>
             <Projects />
+          </Slide>
+        </Container>
+
+
+      </div> */}
+
+      <div>
+        <Container className="container-box" rounded>
+          <Slide left duration={900}>
+            <ProjTabs />
           </Slide>
         </Container>
 

@@ -7,6 +7,8 @@ import { theme } from "./themes/theme"
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import ProjectPage from './pages/ProjectPage/ProjectPage'
 import {myProjects} from '../src/components/Projects/ProjectsData'
+import 'react-mdl/extra/material.css';
+import 'react-mdl/extra/material.js';
 
 
 

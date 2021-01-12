@@ -12,14 +12,14 @@ function StarWarsCrawl() {
 <section className="star-wars" >
   <div className="crawl">
     <div className="title">
-      <p>Episode X</p>
+      <div className="text-css">Episode X</div>
       <h1>Sophia Orlando</h1>
     </div>
 
-    <p>Contemplating my next move post-college, I decided to dive into the mysterious sea of
+    <div className="text-css">Contemplating my next move post-college, I decided to dive into the mysterious sea of
     coding. The first time I had seen the words,
     "Hello, World!", pop up on my computer screen, I haven't looked back. Take a look at my skills and some
-of my recent projects.</p>
+of my recent projects.</div>
   </div>
 </section>
     </div>

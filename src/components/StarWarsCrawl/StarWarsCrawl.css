@@ -39,8 +39,9 @@
   /* animation-iteration-count: infinite; */
 
 }
-p{
+.text-css{
   color:white;
+
 }
 .crawl > .title {
   font-size: 90%;
