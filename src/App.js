@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import React from 'react-bootstrap'
-import Slide from 'react-reveal/Slide'
+import { Slide, Fade } from 'react-reveal'
 import { Parallax } from 'react-parallax'
 import { Container } from 'react-bootstrap'
 
@@ -13,6 +13,8 @@ import Skills from './pages/Skills/Skills'
 import Projects from './components/Projects/Projects'
 import StarWarsCrawl from './components/StarWarsCrawl/StarWarsCrawl'
 import ProjTabs from './components/ProjTabs/ProjTabs'
+import ContactForm from './pages/ContactForm/ContactForm'
+import Footer from './components/Footer/Footer'
 
 
 
@@ -29,12 +31,12 @@ function App() {
 
       <NavBar />
 
-              <div>
+      <div>
         <Container className="container-box" rounded>
           <Slide left duration={900}>
-          <StarWarsCrawl />
-        
-            </Slide>
+            <StarWarsCrawl />
+
+          </Slide>
         </Container>
 
 
@@ -45,10 +47,10 @@ function App() {
 
       <div>
         <Container className="container-box" rounded>
-          <Slide left duration={900}>
-            <Carousel />
-            <TitleMessage />          
-            </Slide>
+          {/* <Slide left duration={900}> */}
+          <Carousel />
+          <TitleMessage />
+          {/* </Slide> */}
         </Container>
 
 
@@ -113,8 +115,14 @@ function App() {
 
 
       </div>
-
-
+      <Container className="container-box rounded">
+        <Fade duration={500}>
+          <hr />
+          <ContactForm />
+        </Fade>
+      </Container>
+      <hr />
+      <Footer />
     </div>
 
   );

@@ -11,12 +11,6 @@
   border-color:black;
 }
 
-.star-wars-crawl{
-  height: 800px;
-  top:-100px;
-
-}
-
 .background{
   background-color:black;
 }
@@ -32,10 +26,20 @@ h1{
     font-weight:700;
 }
 
-/* .profile {
-  max-width: 18em;
-} */
 
-/* .my-details {
-  background-color: rgba(255, 255, 255, 0.747);
-} */
+.img-resize {
+  width: 10em;
+}
+
+.style {
+  font-size: 20px;
+}
+
+.jumbo-style {
+  background-image: url("https://images.unsplash.com/photo-1520034475321-cbe63696469a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+}
+
+.body-title-style {
+  font-size: 25px;
+  font-weight: 800;
+}

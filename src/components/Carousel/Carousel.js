@@ -10,7 +10,7 @@ import ScrollDown from '../ScrollDown/ScrollDown'
 function MyCarousel() {
   return (
     <>
-      <div id="home" className="home">
+      <div className="home">
         <Carousel controls={false} indicators interval={3000} pause={false}>
           <Carousel.Item>
             <img

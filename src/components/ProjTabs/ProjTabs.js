@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Tabs, Tab, Grid, Cell, Card, CardText, CardTitle, CardActions, Button, CardMenu } from 'react-mdl'
+import { Link } from 'react-router-dom'
+
 
 import './ProjTabs.css'
 
@@ -17,18 +19,24 @@ class ProjTabs extends Component {
       return (
         <div className="projects-grid">
           <Grid>
-            {myProjects.all.map((project, index) => (
+            {myProjects.fullStack.map((project, index) => (
               <div>
                 <Cell col={4}>
                   <Card shadow={5} style={{ minWidth: "450", margin: 'auto' }} key={index}>
-                    <CardTitle style={{ color: "#fff", height: "176px", background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover' }}>{project.name}</CardTitle>
-                    <CardText>
-                      This is dummy text</CardText>
+                    <CardTitle style={{ height: "176px", background: `url(${project.video}) center / cover` }}>{project.name}</CardTitle>
+                    <CardText>{project.languages}</CardText>
+                    <CardText>{project.description}</CardText>
                     <CardActions border>
-                      <Button colored>Github</Button>
-                      <Button colored>Code</Button>
-                      <Button colored>Live Demo</Button>
-
+                      <a href={project.github} target="_blank">
+                        <Button className="m-2" variant="outline colorType">
+                          Github
+                      </Button>
+                      </a>
+                      <a href={project.url} target="_blank">
+                        <Button className="m-2" variant="outline colorType">
+                          Preview
+                      </Button>
+                      </a>
                     </CardActions>
                     <CardMenu style={{ color: "#fff" }}>
                     </CardMenu>
@@ -39,23 +47,23 @@ class ProjTabs extends Component {
             ))}
           </Grid>
         </div>
-
       )
     } else if (this.state.activeTab === 1) {
       return (
         <div className="projects-grid">
           <Grid>
-            {myProjects.fullStack.map((project, index) => (
+            {myProjects.videography.map((project, index) => (
               <div>
                 <Cell col={4}>
                   <Card shadow={5} style={{ minWidth: "450", margin: 'auto' }} key={index}>
-                    <CardTitle style={{ color: "#fff", height: "176px", background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover' }}>{project.name}</CardTitle>
-                    <CardText>
-                      This is dummy text</CardText>
+                    <CardTitle style={{ height: "176px", background: `url(${project.imgSrc}) center / cover` }}>{project.name}</CardTitle>
+                    <CardText>{project.description}</CardText>
                     <CardActions border>
-                      <Button colored>Github</Button>
-                      <Button colored>Code</Button>
-                      <Button colored>Live Demo</Button>
+                    <a href={project.url} target="_blank">
+                        <Button className="m-2" variant="outline colorType">
+                          Preview
+                      </Button>
+                      </a>
 
                     </CardActions>
                     <CardMenu style={{ color: "#fff" }}>
@@ -72,17 +80,18 @@ class ProjTabs extends Component {
       return (
         <div className="projects-grid">
           <Grid>
-            {myProjects.videography.map((project, index) => (
+            {myProjects.igtv.map((project, index) => (
               <div>
                 <Cell col={4}>
                   <Card shadow={5} style={{ minWidth: "450", margin: 'auto' }} key={index}>
-                    <CardTitle style={{ color: "#fff", height: "176px", background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover' }}>{project.name}</CardTitle>
-                    <CardText>
-                      This is dummy text</CardText>
+                    <CardTitle style={{ height: "176px", background: `url(${project.imgSrc}) center / cover` }}>{project.name}</CardTitle>
+                    <CardText>{project.description}</CardText>
                     <CardActions border>
-                      <Button colored>Github</Button>
-                      <Button colored>Code</Button>
-                      <Button colored>Live Demo</Button>
+                    <a href={project.url} target="_blank">
+                        <Button className="m-2" variant="outline colorType">
+                          Preview
+                      </Button>
+                      </a>
 
                     </CardActions>
                     <CardMenu style={{ color: "#fff" }}>
@@ -95,52 +104,22 @@ class ProjTabs extends Component {
           </Grid>
         </div>
       )
-    } else if (this.state.activeTab === 3) {
-      return (
-        <div className="projects-grid">
-          <Grid>
-            {myProjects.igtv.map((project, index) => (
-              <div>
-                <Cell col={4}>
-                  <Card shadow={5} style={{ minWidth: "450", margin: 'auto' }} key={index}>
-                    <CardTitle style={{ color: "#fff", height: "176px", background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover' }}>{project.name}</CardTitle>
-                    <CardText>
-                      This is dummy text</CardText>
-                    <CardActions border>
-                      <Button colored>Github</Button>
-                      <Button colored>Code</Button>
-                      <Button colored>Live Demo</Button>
-
-                    </CardActions>
-                    <CardMenu style={{ color: "#fff" }}>
-                    </CardMenu>
-                  </Card>
-                </Cell>
-              </div>
-
-            ))}
-          </Grid>
-        </div>
-              )
     }
   }
 
 
   render() {
     return (
-      <div className="category-tabs">
+      <div className="category-tabs" id="projects">
         <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-          <Tab>All</Tab>
           <Tab>Fullstack</Tab>
           <Tab>Videography</Tab>
           <Tab>IGTV</Tab>
 
         </Tabs>
-        {/* <Grid>
-          <Cell col={4}> */}
+
         <div className="content">{this.toggleCategories()}</div>
-        {/* </Cell>
-        </Grid> */}
+
 
       </div>
     )
