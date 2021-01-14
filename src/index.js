@@ -19,8 +19,8 @@ ReactDOM.render(
         <Route path="/projectpage/:id" render={props => <ProjectPage currentProj={myProjects}/>}>
           {/* <ProjectPage/> */}
         </Route>
-        <Route exact path="/" component={App}>
-          {/* App */}
+        <Route exact path="/portfolio" component={App}>
+          {/* App */}       
         </Route>
       </Switch>
     </ThemeProvider>
