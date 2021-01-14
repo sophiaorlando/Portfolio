@@ -1,6 +1,6 @@
 {
-  "homepage": "http://sophiaorlando.github.io/react-portfolio",
-  "name": "react-portfolio",
+  "homepage": "http://sophiaorlando.github.io/portfolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
