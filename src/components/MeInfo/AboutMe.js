@@ -4,7 +4,7 @@ import Tilt from "react-tilt";
 import ship from '../../assets/img/aboutme/ship.gif'
 
 
-import ProfilePicture from '../../assets/img/profile/profPic.png'
+import ProfilePicture from '../../assets/img/profile/profPic2.jpg'
 import './AboutMe.css'
 
 
@@ -43,7 +43,7 @@ function AboutMe() {
                   Sophia Orlando
                     </Card.Title>
               </div>
-              <Image src={ProfilePicture} className="profile justify-content-end col-lg-6" alt="profilePicture" fluid rounded />
+              <Image src={ProfilePicture} className="profile justify-content-end col-lg-8" alt="profilePicture" fluid rounded />
               <Card.Text>
                 <ul>
                   <li className="listItems">
