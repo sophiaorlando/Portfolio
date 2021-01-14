@@ -6,11 +6,10 @@ import { Container } from 'react-bootstrap'
 
 //components
 import NavBar from "./components/NavBar/NavBar"
-import Carousel from './components/Carousel/Carousel'
+import Carousel from './pages/AboutMe/Carousel'
 import TitleMessage from './components/TitleMessage/TitleMessage'
-import AboutMe from './pages/AboutMe/AboutMe'
+import AboutMe from './components/MeInfo/AboutMe'
 import Skills from './pages/Skills/Skills'
-import Projects from './components/Projects/Projects'
 import StarWarsCrawl from './components/StarWarsCrawl/StarWarsCrawl'
 import ProjTabs from './components/ProjTabs/ProjTabs'
 import ContactForm from './pages/ContactForm/ContactForm'
@@ -42,21 +41,31 @@ function App() {
 
       </div>
 
-
-
-
       <div>
         <Container className="container-box" rounded>
-          {/* <Slide left duration={900}> */}
-          <Carousel />
-          <TitleMessage />
-          {/* </Slide> */}
+          <Slide left duration={900}>
+            <ProjTabs />
+          </Slide>
         </Container>
 
 
       </div>
 
+
       <div>
+        <Container className="container-box" rounded>
+          <Slide left duration={900}>
+          <Carousel />
+          {/* <AboutMe /> */}
+
+          {/* <TitleMessage /> */}
+          </Slide>
+        </Container>
+
+
+      </div>
+
+      {/* <div>
         <Container className="container-box" rounded>
           <Slide left duration={900}>
             <AboutMe />
@@ -64,7 +73,7 @@ function App() {
         </Container>
 
 
-      </div>
+      </div> */}
 
       {/* About Me Section */}
       <div>
@@ -106,15 +115,7 @@ function App() {
 
       </div> */}
 
-      <div>
-        <Container className="container-box" rounded>
-          <Slide left duration={900}>
-            <ProjTabs />
-          </Slide>
-        </Container>
 
-
-      </div>
       <Container className="container-box rounded">
         <Fade duration={500}>
           <hr />

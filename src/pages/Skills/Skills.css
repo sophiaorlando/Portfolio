@@ -26,3 +26,11 @@
   font-weight: 500;
   color: #ffffff;
 }
+
+.font-details{
+  font-family: 'Pathway Gothic One', sans-serif;
+  color:white;
+  font-weight:700;
+  font-size: 6em;    
+  font-weight: bold;
+}

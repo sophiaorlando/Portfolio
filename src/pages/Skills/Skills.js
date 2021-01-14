@@ -9,22 +9,15 @@ import Galaxy from '../../assets/img/skills/galaxy.jpg'
 
 function Skills() {
   return (
-    <div className="pt-3 pb-3" id="skills">
-      <style type="text/css">
-        {`
-        .backgroundImg{
-          background-image: url(../../assets/img/skills/stars.jpg);
-          background-color:transparent;
-        }
-        `}
+    <div className="pt-3 pb-3" id="skills" >
+      <h1 className="text-center font-details pb-4">TECH SKILLS</h1>
 
-      </style>
-      <h1 className="text-center font-details-b pb-4">TECH SKILLS</h1>
+<div style={{ backgroundImage: `url("https://images.unsplash.com/photo-1520034475321-cbe63696469a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")` , borderRadius: "25px"}}>
       <CardDeck>
         <Row className="d-flex justify-content-around">
-          <Col md={4}>
+          <Col md={3}>
             <Card className="focus mt-2 mb-2" >
-              <Card.Body className="backgroundImg">
+              <Card.Body>
                 {/* Languages */}
                 <Card.Title className="text-center  card-title">Languages</Card.Title>
                 <hr />
@@ -57,27 +50,11 @@ function Skills() {
               </Card.Body>
             </Card>
 
-            {/* Database */}
 
-            <Card className="focus mt-2 mb-2">
-              <Card.Body>
-                <Card.Title className="text-center  card-title">Database</Card.Title>
-                <hr />
-                <Card.Text className="card-text d-flex justify-content-start flex-column">
-                  {skills.databases.map((skill, index) => (
-                    <span className="p-2" key={index}>
-                      <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1"></Image> {skill.skillName}
-                      </a>
-                    </span>
-                  ))}
-                </Card.Text>
-              </Card.Body>
-            </Card>
           </Col>
 
           {/* FrameWorks */}
-          <Col md={4}>
+          <Col md={3}>
             <Card className="focus mt-2 mb-2">
               <Card.Body>
                 <Card.Title className="text-center  card-title">Frameworks</Card.Title>
@@ -112,11 +89,8 @@ function Skills() {
             </Card>
           </Col>
 
-
-
-
-            {/* Platforms */}
-            <Col md={4}>
+          {/* Platforms */}
+          <Col md={3}>
             <Card className="focus mt-2 mb-2">
               <Card.Body>
                 <Card.Title className="text-center  card-title">Hosting Platforms</Card.Title>
@@ -132,6 +106,30 @@ function Skills() {
                 </Card.Text>
               </Card.Body>
             </Card>
+
+          </Col>
+
+
+          <Col md={3}>
+
+            {/* Database */}
+
+            <Card className="focus mt-2 mb-2">
+              <Card.Body>
+                <Card.Title className="text-center  card-title">Database</Card.Title>
+                <hr />
+                <Card.Text className="card-text d-flex justify-content-start flex-column">
+                  {skills.databases.map((skill, index) => (
+                    <span className="p-2" key={index}>
+                      <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
+                        <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1"></Image> {skill.skillName}
+                      </a>
+                    </span>
+                  ))}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+
             {/* Other */}
 
             <Card className="focus mt-2 mb-2">
@@ -149,9 +147,13 @@ function Skills() {
                 </Card.Text>
               </Card.Body>
             </Card>
+
+
+
           </Col>
         </Row>
       </CardDeck>
+      </div>
     </div>
   )
 }

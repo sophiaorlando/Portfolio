@@ -16,9 +16,7 @@ function StarWarsCrawl() {
       <h1>Sophia Orlando</h1>
     </div>
 
-    <div className="text-css">Contemplating my next move post-college, I decided to dive into the mysterious sea of
-    coding. The first time I had seen the words,
-    "Hello, World!", pop up on my computer screen, I haven't looked back. Take a look at my skills and some
+    <div className="text-css">An innovate software engineer with emphasis on ReactJS and user accessibility. Take a look at my skills and some
 of my recent projects.</div>
   </div>
 </section>

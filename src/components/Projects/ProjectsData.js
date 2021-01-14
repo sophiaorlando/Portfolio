@@ -4,9 +4,11 @@ import I_SNEAKER_FREAKERS_VIDEO from '../../assets/img/projects/Project3Demo.gif
 //Beach Cleanup Initiative
 import I_BEACH from '../../assets/img/projects/beachImg.png';
 import I_BEACH_VIDEO from '../../assets/img/projects/Project2Demo.gif';
+// Femme Store
+import I_FEMME_VIDEO from '../../assets/img/projects/FemmeDemo.gif'
 //Budget Tracker
-import I_BUDGET_TRACKER from '../../assets/img/projects/BudgetTracker.png';
-import I_BUDGET_IMG from '../../assets/img/projects/Budget-1.png';
+import I_BUDGET_TRACKER_IMG from '../../assets/img/projects/BudgetTracker.png';
+import I_BUDGET_TRACKER_VIDEO from '../../assets/img/projects/BudgetTrackerDemo.gif';
 // New York Times Article Search
 import I_NYTS from '../../assets/img/projects/NYTS.png';
 import I_NYTS_IMG from '../../assets/img/projects/NYTSearch.gif';
@@ -35,6 +37,41 @@ import I_ZION_VIDEO from '../../assets/img/projects/ZION-2.PNG';
 
 export const myProjects = {
   fullStack: [
+
+    {
+      imgSrc: I_WEATHER,
+      filterType: "filter-fullStack",
+      name: "Weather App on Steroids",
+      id: "5",
+      description: "Wondering what the weather is like in Abakan, Russia? This application is for you. Programmed to feature current weather data through pie charts and graphs in any city a user can think of, Weather App on Steroids will never have you guessing what the weather will be like.",
+      github: "https://github.com/sophiaorlando/hourlyWeatherApp",
+      url: "https://guarded-citadel-48915.herokuapp.com/",
+      languages: "Javascript, React.js, Nodejs, React-Bootstrap, React-ChartJS , Fetch API",
+      video: I_WEATHER_VIDEO
+    },
+
+    {
+      imgSrc: I_SNEAKER_FREAKERS,
+      filterType: "filter-fullStack",
+      name: "Sneaker Freakers",
+      id: "1",
+      description: "For all of the hypebeast sneaker-heads out there, Sneaker Freakers was designed to be the mecca for all things sneakers. This collaborative application is used as a resource for sneaker-heads to find featured sneakers by brands like; Adidas, Reebok, Jordan, Puma, and more. Users may view details about a specified sneaker and share their thoughts through an interactive blog page.",
+      github: "https://github.com/sophiaorlando/Project3",
+      url: "https://secret-beyond-86832.herokuapp.com/home",
+      languages: "Javascript, React.js, Node.js, Material-UI, React-Bootstrap, API",
+      video: I_SNEAKER_FREAKERS_VIDEO
+    },
+    {
+      imgSrc: I_FEMME_VIDEO,
+      filterType: "filter-fullStack",
+      name: "E-commerce Femme Store",
+      id: "2",
+      description: "Built by a beauty care shopping addict, for beauty care shopping addicts. An immersive E-commerce web application that challenges the common UI masculine shopping experience through generating a femme UX/UI layout. Femme store places emphasis on maintaining user accessibility, usability, and inclusion.",
+      github: "https://github.com/sophiaorlando/femme-store",
+      url: "https://hidden-bayou-33298.herokuapp.com/login",
+      languages: "Javascript, React.js, Firebase, React-currency, Node.js, Material-UI, React-Bootstrap, API",
+      video: I_FEMME_VIDEO
+    },
     {
       imgSrc: I_BEACH,
       filterType: "filter-fullStack",
@@ -47,22 +84,22 @@ export const myProjects = {
       video: I_BEACH_VIDEO
     },
     {
-      imgSrc: I_BUDGET_TRACKER,
+      imgSrc: I_BUDGET_TRACKER_IMG,
       filterType: "filter-fullStack",
       name: "Budget Tracker",
-      id: "1",
+      id: "3",
       description: "Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to my applicaiton's success. If you are traveling, you may use this application to track any withdrawls or deposits with or without a data/internet connection, so that your account balance will remain accurate.",
       github: "https://github.com/sophiaorlando/homework18",
       url: "https://rocky-springs-86918.herokuapp.com/",
-      languages: "PWA (Progressive Web Application), HTML, CSS, Bootstrap, API, Node",
-      vide: I_BUDGET_IMG
+      languages: "PWA (Progressive Web Application), CanvasJS, HTML, CSS, Bootstrap, API, Node",
+      video: I_BUDGET_TRACKER_VIDEO
 
     },
     {
       imgSrc: I_NYTS,
       filterType: "filter-fullStack",
       name: "New York Times Article Search",
-      id: "2",
+      id: "4",
       description: "Users get a 4 for 1 deal with this application. With the ability to filter through thousands of New York Times Articles, users recieve relevant articles articles per search including; Title, Author, Image, and link to the article. ",
       github: "https://sophiaorlando.github.io/New-York-Times-Article-Search/",
       url: "https://github.com/sophiaorlando/New-York-Times-Article-Search",
@@ -70,37 +107,12 @@ export const myProjects = {
       video: I_NYTS_IMG
 
     },
-    {
-      imgSrc: I_SNEAKER_FREAKERS,
-      filterType: "filter-fullStack",
-      name: "Sneaker Freakers",
-      id: "3",
-      description: "For all of the hypebeast sneaker-heads out there, Sneaker Freakers was designed to be the mecca for all things sneakers. This collaborative application is used as a resource for sneaker-heads to find featured sneakers by brands like; Adidas, Reebok, Jordan, Puma, and more. Users may view details about a specified sneaker and share their thoughts through an interactive blog page.",
-      github: "https://github.com/sophiaorlando/Project3",
-      url: "https://secret-beyond-86832.herokuapp.com/home",
-      languages: "Javascript, React.js, Node.js, Material-UI, Bootstrap, API",
-      video: I_SNEAKER_FREAKERS_VIDEO
 
-
-    },
-    {
-      imgSrc: I_WEATHER,
-      filterType: "filter-fullStack",
-      name: "Weather App on Steroids",
-      id: "4",
-      description: "Wondering what the weather is like in Abakan, Russia? This application is for you. Programmed to feature current weather data through pie charts and graphs in any city a user can think of, Weather App on Steroids will never have you guessing what the weather will be like.",
-      github: "https://github.com/sophiaorlando/hourlyWeatherApp",
-      url: "https://guarded-citadel-48915.herokuapp.com/",
-      languages: "Javascript, React, Nodejs, Bootstrap, Fetch API",
-      video: I_WEATHER_VIDEO
-
-
-    },
     {
       imgSrc: I_VISITOR_CENTERS,
       filterType: "filter-fullStack",
       name: "U.S.A Visitor Centers",
-      id: "5",
+      id: "6",
       description: "Built with family travel in mind, this web application presents Visitor Center's in all 50 U.S.A states. Average gas prices per state are included to give users an idea of how costly their trip would be.",
       github: "https://github.com/sophiaorlando/State-Visitor-Centers",
       url: "https://young-shore-67722.herokuapp.com/",
