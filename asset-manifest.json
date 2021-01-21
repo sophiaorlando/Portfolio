@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5ec3185a.chunk.css",
-    "main.js": "/portfolio/static/js/main.c4bee068.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.c4bee068.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.0d2c5e51.chunk.css",
+    "main.js": "/portfolio/static/js/main.7c41a85a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.7c41a85a.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.8fed2963.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.8fed2963.js.map",
     "static/css/2.0bae969b.chunk.css": "/portfolio/static/css/2.0bae969b.chunk.css",
-    "static/js/2.2f5c1f1c.chunk.js": "/portfolio/static/js/2.2f5c1f1c.chunk.js",
-    "static/js/2.2f5c1f1c.chunk.js.map": "/portfolio/static/js/2.2f5c1f1c.chunk.js.map",
+    "static/js/2.6960467c.chunk.js": "/portfolio/static/js/2.6960467c.chunk.js",
+    "static/js/2.6960467c.chunk.js.map": "/portfolio/static/js/2.6960467c.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.0bae969b.chunk.css.map": "/portfolio/static/css/2.0bae969b.chunk.css.map",
-    "static/css/main.5ec3185a.chunk.css.map": "/portfolio/static/css/main.5ec3185a.chunk.css.map",
-    "static/js/2.2f5c1f1c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.2f5c1f1c.chunk.js.LICENSE.txt",
+    "static/css/main.0d2c5e51.chunk.css.map": "/portfolio/static/css/main.0d2c5e51.chunk.css.map",
+    "static/js/2.6960467c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6960467c.chunk.js.LICENSE.txt",
     "static/media/BudgetTracker.dfd49552.png": "/portfolio/static/media/BudgetTracker.dfd49552.png",
     "static/media/BudgetTrackerDemo.cda8ef8b.gif": "/portfolio/static/media/BudgetTrackerDemo.cda8ef8b.gif",
     "static/media/Disney-1.19ce923b.png": "/portfolio/static/media/Disney-1.19ce923b.png",
@@ -61,9 +61,6 @@
     "static/media/redux.0e4fb1c8.svg": "/portfolio/static/media/redux.0e4fb1c8.svg",
     "static/media/sass-1.8aa78a83.svg": "/portfolio/static/media/sass-1.8aa78a83.svg",
     "static/media/ship.859f5573.gif": "/portfolio/static/media/ship.859f5573.gif",
-    "static/media/slide1.e37b475b.jpg": "/portfolio/static/media/slide1.e37b475b.jpg",
-    "static/media/slide2.a677bbbb.jpg": "/portfolio/static/media/slide2.a677bbbb.jpg",
-    "static/media/slide3.1b5cd476.jpg": "/portfolio/static/media/slide3.1b5cd476.jpg",
     "static/media/stars.a6ab7faa.jpg": "/portfolio/static/media/stars.a6ab7faa.jpg",
     "static/media/steroids.737896c3.jpg": "/portfolio/static/media/steroids.737896c3.jpg",
     "static/media/styled-components.2e00d138.svg": "/portfolio/static/media/styled-components.2e00d138.svg",
@@ -75,8 +72,8 @@
   "entrypoints": [
     "static/js/runtime-main.8fed2963.js",
     "static/css/2.0bae969b.chunk.css",
-    "static/js/2.2f5c1f1c.chunk.js",
-    "static/css/main.5ec3185a.chunk.css",
-    "static/js/main.c4bee068.chunk.js"
+    "static/js/2.6960467c.chunk.js",
+    "static/css/main.0d2c5e51.chunk.css",
+    "static/js/main.7c41a85a.chunk.js"
   ]
 }
