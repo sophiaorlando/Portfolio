@@ -40,7 +40,7 @@ export const myProjects = {
 
     {
       imgSrc: I_WEATHER,
-      filterType: "filter-fullStack",
+      filterType: "FullStack Project",
       name: "Weather App on Steroids",
       id: "5",
       description: "Wondering what the weather is like in Abakan, Russia? This application is for you. Programmed to feature current weather data through pie charts and graphs in any city a user can think of, Weather App on Steroids will never have you guessing what the weather will be like.",
@@ -52,7 +52,7 @@ export const myProjects = {
 
     {
       imgSrc: I_SNEAKER_FREAKERS,
-      filterType: "filter-fullStack",
+      filterType: "FullStack Project",
       name: "Sneaker Freakers",
       id: "1",
       description: "For all of the hypebeast sneaker-heads out there, Sneaker Freakers was designed to be the mecca for all things sneakers. This collaborative application is used as a resource for sneaker-heads to find featured sneakers by brands like; Adidas, Reebok, Jordan, Puma, and more. Users may view details about a specified sneaker and share their thoughts through an interactive blog page.",
@@ -63,7 +63,7 @@ export const myProjects = {
     },
     {
       imgSrc: I_FEMME_VIDEO,
-      filterType: "filter-fullStack",
+      filterType: "FullStack Project",
       name: "E-commerce Femme Store",
       id: "2",
       description: "Built by a beauty care shopping addict, for beauty care shopping addicts. An immersive E-commerce web application that challenges the common UI masculine shopping experience through generating a femme UX/UI layout. Femme store places emphasis on maintaining user accessibility, usability, and inclusion.",
@@ -74,7 +74,7 @@ export const myProjects = {
     },
     {
       imgSrc: I_BEACH,
-      filterType: "filter-fullStack",
+      filterType: "FullStack Project",
       name: "Beach Cleanup Initiative",
       id: "0",
       description: "This application is used as a resource to find local beach cleanups by county in California. Once logged in, users have to the ability to create their own events at various locations in their county. Users can organize, collaborate, and share to help keep our beaches clean!",
@@ -85,7 +85,7 @@ export const myProjects = {
     },
     {
       imgSrc: I_BUDGET_TRACKER_IMG,
-      filterType: "filter-fullStack",
+      filterType: "FullStack Project",
       name: "Budget Tracker",
       id: "3",
       description: "Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to my applicaiton's success. If you are traveling, you may use this application to track any withdrawls or deposits with or without a data/internet connection, so that your account balance will remain accurate.",
@@ -97,7 +97,7 @@ export const myProjects = {
     },
     {
       imgSrc: I_NYTS,
-      filterType: "filter-fullStack",
+      filterType: "FullStack Project",
       name: "New York Times Article Search",
       id: "4",
       description: "Users get a 4 for 1 deal with this application. With the ability to filter through thousands of New York Times Articles, users recieve relevant articles articles per search including; Title, Author, Image, and link to the article. ",
@@ -110,7 +110,7 @@ export const myProjects = {
 
     {
       imgSrc: I_VISITOR_CENTERS,
-      filterType: "filter-fullStack",
+      filterType: "FullStack Project",
       name: "U.S.A Visitor Centers",
       id: "6",
       description: "Built with family travel in mind, this web application presents Visitor Center's in all 50 U.S.A states. Average gas prices per state are included to give users an idea of how costly their trip would be.",
@@ -125,62 +125,203 @@ export const myProjects = {
   videography: [
     {
       imgSrc: I_ICELAND,
-      filterType: "filter-videography",
+      filterType: "Videography Project",
       name: "Iceland video",
       id: "0",
       description: "Sponsored by TravelingMom, I traveled to Iceland with a tour provided by, Hidden Iceland, to capture destination content. I filmed the footage using an iPhone and edited the film using Final Cut Pro X.",
       url: "https://www.youtube.com/watch?v=XyuIrDLizE4",
       languages: "Final Cut Pro X",
-      video: I_ICELAND_VIDEO
+      video: I_ICELAND
 
     },
     {
       imgSrc: I_GERMANY,
-      filterType: "filter-videography",
+      filterType: "Videography Project",
       name: "Germany video",
       id: "1",
       description: "Sponsored by TravelingMom, I traveled to Germany to create a family destination video. The video was used in a published article on TravelingMom. I filmed the footage with an iPhone and edited the film using Final Cut Pro X.",
       article: "https://www.travelingmom.com/travel-tips/small-group-family-tours-in-europe/",
       url: "https://www.youtube.com/watch?v=3mcnqw8kja4",
       languages: "Final Cut Pro X",
-      video: I_GERMANY_VIDEO
+      video: I_GERMANY
 
     },
     {
       imgSrc: I_DISNEY,
-      filterType: "filter-videography",
+      filterType: "Videography Project",
       name: "Disney Video",
       id: "2",
       description: "Sponsored by TravelingMom, I traveled with Fran Capo, Guiness World Record's fastest talking woman for the past two decades, to Disney World in Orlando, FL. I filmed the footage using an iPhone and edited using Adobe Premiere Pro.",
       url: "https://www.youtube.com/watch?v=jN3d3NB8248&t=2s",
       languages: "Adobe Premiere Pro",
-      video: I_DISNEY_VIDEO
+      video: I_DISNEY
 
     },
   ],
   igtv: [
     {
       imgSrc: I_LLF,
-      filterType: "filter-igtv",
+      filterType: "IGTV Project",
       name: "LLF Studios IGTV",
       id: "0",
       description: "Sponsored by TravelingMom, I produced an IGTV advertisement for LLF Studios, a local high-end jewler company to highlight their new Face Mask Chain product. It was published on TravelingMom Instagram account and gained over 220 views. I filmed the footage using an iPhone and edited the advertisement with Final Cut Pro X.",
       url: "https://www.instagram.com/tv/CGDzfJiplOM/",
       languages: "Final Cut Pro X",
-      video: I_LLF_VIDEO
+      video: I_LLF
 
     },
     {
       imgSrc: I_ZION,
-      filterType: "filter-igtv",
+      filterType: "IGTV Project",
       name: "ZION IGTV",
       id: "1",
       description: "Sponsored by TravelingMom, I produced a 3-part IGTV series featuring The Narrows in Zion National Park. The series reached 1,734 users. I edited the IGTV's using Final Cut Pro X. ",
       url: "https://www.instagram.com/travelingmom/channel/",
       languages: "Final Cut Pro X",
-      video: I_ZION_VIDEO
+      video: I_ZION
 
     },
+  ],
+  all: [
+    {
+      imgSrc: I_WEATHER,
+      filterType: "FullStack Project",
+      name: "Weather App on Steroids",
+      id: "5",
+      description: "Wondering what the weather is like in Abakan, Russia? This application is for you. Programmed to feature current weather data through pie charts and graphs in any city a user can think of, Weather App on Steroids will never have you guessing what the weather will be like.",
+      github: "https://github.com/sophiaorlando/hourlyWeatherApp",
+      url: "https://guarded-citadel-48915.herokuapp.com/",
+      languages: "Javascript, React.js, Nodejs, React-Bootstrap, React-ChartJS , Fetch API",
+      video: I_WEATHER_VIDEO
+    },
+
+    {
+      imgSrc: I_SNEAKER_FREAKERS,
+      filterType: "FullStack Project",
+      name: "Sneaker Freakers",
+      id: "1",
+      description: "For all of the hypebeast sneaker-heads out there, Sneaker Freakers was designed to be the mecca for all things sneakers. This collaborative application is used as a resource for sneaker-heads to find featured sneakers by brands like; Adidas, Reebok, Jordan, Puma, and more. Users may view details about a specified sneaker and share their thoughts through an interactive blog page.",
+      github: "https://github.com/sophiaorlando/Project3",
+      url: "https://secret-beyond-86832.herokuapp.com/home",
+      languages: "Javascript, React.js, Node.js, Material-UI, React-Bootstrap, API",
+      video: I_SNEAKER_FREAKERS_VIDEO
+    },
+    {
+      imgSrc: I_FEMME_VIDEO,
+      filterType: "FullStack Project",
+      name: "E-commerce Femme Store",
+      id: "2",
+      description: "Built by a beauty care shopping addict, for beauty care shopping addicts. An immersive E-commerce web application that challenges the common UI masculine shopping experience through generating a femme UX/UI layout. Femme store places emphasis on maintaining user accessibility, usability, and inclusion.",
+      github: "https://github.com/sophiaorlando/femme-store",
+      url: "https://hidden-bayou-33298.herokuapp.com/login",
+      languages: "Javascript, React.js, Firebase, React-currency, Node.js, Material-UI, React-Bootstrap, API",
+      video: I_FEMME_VIDEO
+    },
+    {
+      imgSrc: I_BEACH,
+      filterType: "FullStack Project",
+      name: "Beach Cleanup Initiative",
+      id: "0",
+      description: "This application is used as a resource to find local beach cleanups by county in California. Once logged in, users have to the ability to create their own events at various locations in their county. Users can organize, collaborate, and share to help keep our beaches clean!",
+      github: "https://github.com/sophiaorlando/Project2",
+      url: "https://thawing-temple-82462.herokuapp.com/",
+      languages: "Javascript, MySQL, Sequelize, Moment.js, Node.js, Express, API",
+      video: I_BEACH_VIDEO
+    },
+    {
+      imgSrc: I_BUDGET_TRACKER_IMG,
+      filterType: "FullStack Project",
+      name: "Budget Tracker",
+      id: "3",
+      description: "Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to my applicaiton's success. If you are traveling, you may use this application to track any withdrawls or deposits with or without a data/internet connection, so that your account balance will remain accurate.",
+      github: "https://github.com/sophiaorlando/homework18",
+      url: "https://rocky-springs-86918.herokuapp.com/",
+      languages: "PWA (Progressive Web Application), CanvasJS, HTML, CSS, Bootstrap, API, Node",
+      video: I_BUDGET_TRACKER_VIDEO
+
+    },
+    {
+      imgSrc: I_NYTS,
+      filterType: "FullStack Project",
+      name: "New York Times Article Search",
+      id: "4",
+      description: "Users get a 4 for 1 deal with this application. With the ability to filter through thousands of New York Times Articles, users recieve relevant articles articles per search including; Title, Author, Image, and link to the article. ",
+      github: "https://sophiaorlando.github.io/New-York-Times-Article-Search/",
+      url: "https://github.com/sophiaorlando/New-York-Times-Article-Search",
+      languages: "jQuery, AJAX, CSS, Bootstrap, API",
+      video: I_NYTS_IMG
+
+    },
+
+    {
+      imgSrc: I_VISITOR_CENTERS,
+      filterType: "FullStack Project",
+      name: "U.S.A Visitor Centers",
+      id: "6",
+      description: "Built with family travel in mind, this web application presents Visitor Center's in all 50 U.S.A states. Average gas prices per state are included to give users an idea of how costly their trip would be.",
+      github: "https://github.com/sophiaorlando/State-Visitor-Centers",
+      url: "https://young-shore-67722.herokuapp.com/",
+      languages: "HandleBars, Javascript, MySQL, CSS, API, Express, Node",
+      video: I_VISITOR_CENTERS_VIDEO
+
+
+    },
+    {
+      imgSrc: I_ICELAND,
+      filterType: "Videography Project",
+      name: "Iceland video",
+      id: "0",
+      description: "Sponsored by TravelingMom, I traveled to Iceland with a tour provided by, Hidden Iceland, to capture destination content. I filmed the footage using an iPhone and edited the film using Final Cut Pro X.",
+      url: "https://www.youtube.com/watch?v=XyuIrDLizE4",
+      languages: "Final Cut Pro X",
+      video: I_ICELAND
+
+    },
+    {
+      imgSrc: I_GERMANY,
+      filterType: "Videography Project",
+      name: "Germany video",
+      id: "1",
+      description: "Sponsored by TravelingMom, I traveled to Germany to create a family destination video. The video was used in a published article on TravelingMom. I filmed the footage with an iPhone and edited the film using Final Cut Pro X.",
+      article: "https://www.travelingmom.com/travel-tips/small-group-family-tours-in-europe/",
+      url: "https://www.youtube.com/watch?v=3mcnqw8kja4",
+      languages: "Final Cut Pro X",
+      video: I_GERMANY
+
+    },
+    {
+      imgSrc: I_DISNEY,
+      filterType: "Videography Project",
+      name: "Disney Video",
+      id: "2",
+      description: "Sponsored by TravelingMom, I traveled with Fran Capo, Guiness World Record's fastest talking woman for the past two decades, to Disney World in Orlando, FL. I filmed the footage using an iPhone and edited using Adobe Premiere Pro.",
+      url: "https://www.youtube.com/watch?v=jN3d3NB8248&t=2s",
+      languages: "Adobe Premiere Pro",
+      video: I_DISNEY
+
+    },
+    {
+      imgSrc: I_LLF,
+      filterType: "IGTV Project",
+      name: "LLF Studios IGTV",
+      id: "0",
+      description: "Sponsored by TravelingMom, I produced an IGTV advertisement for LLF Studios, a local high-end jewler company to highlight their new Face Mask Chain product. It was published on TravelingMom Instagram account and gained over 220 views. I filmed the footage using an iPhone and edited the advertisement with Final Cut Pro X.",
+      url: "https://www.instagram.com/tv/CGDzfJiplOM/",
+      languages: "Final Cut Pro X",
+      video: I_LLF
+
+    },
+    {
+      imgSrc: I_ZION,
+      filterType: "IGTV Project",
+      name: "ZION IGTV",
+      id: "1",
+      description: "Sponsored by TravelingMom, I produced a 3-part IGTV series featuring The Narrows in Zion National Park. The series reached 1,734 users. I edited the IGTV's using Final Cut Pro X. ",
+      url: "https://www.instagram.com/travelingmom/channel/",
+      languages: "Final Cut Pro X",
+      video: I_ZION
+
+    }
   ]
 
 }

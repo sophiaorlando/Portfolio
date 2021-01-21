@@ -1,56 +1,102 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from 'react-router-dom'
-import { myProjects } from '../../components/Projects/ProjectsData'
-import NavBar from '../../components/NavBar/NavBar'
-import { Jumbotron, Container, Button } from 'react-bootstrap'
-import './ProjectPage.css'
-
-
-function ProjectPage(props) {
-
-  let { id } = useParams()
-
-  const description = myProjects.fullStack[id].description
-  const github = myProjects.fullStack[id].github
-  // const projId = myProjects.fullStack[id].id
-  // const imgSrc = myProjects.fullStack[id].imgSrc
-  const languages = myProjects.fullStack[id].languages
-  const name = myProjects.fullStack[id].name
-  const url = myProjects.fullStack[id].url
-  const video = myProjects.fullStack[id].video
-
-  console.log(myProjects.fullStack[id].description)
-  console.log(myProjects.fullStack[id])
-  console.log(props)
+import React from 'react';
+import PropTypes from 'prop-types';
+import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
+import FullStackProjects from '../../components/ProjectType/FullStackProjects';
+import VideographyProjects from '../../components/ProjectType/VideographyProjects';
+import IGTVProjects from '../../components/ProjectType/IGTVProjects';
+import AllProjects from '../../components/ProjectType/AllProjects';
 
 
 
 
-
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
 
   return (
-    <div className="project-page">
-      <div className="details">
-        <div className="big-img">
-          <img src={video} alt=""></img>
-        </div>
-
-        <div className="box">
-          <div className="row">
-            <h2> {name} </h2>
-          </div>
-          <p> {languages} </p>
-          <p> {description} </p>
-          <a href={github} target="_blank" rel="noopener noreferrer">
-            <Button className="cart" variant="outline colorType">GitHub</Button>
-          </a>
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            <Button className="cart" variant="outline colorType">GitHub</Button>
-          </a>
-        </div>
-      </div>
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box p={3}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
     </div>
-  )
+  );
 }
 
-export default ProjectPage
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.any.isRequired,
+  value: PropTypes.any.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    'aria-controls': `simple-tabpanel-${index}`,
+  };
+}
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+    backgroundColor: "black",
+    backgroundImage: `url("https://images.unsplash.com/photo-1520034475321-cbe63696469a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")`,
+    borderRadius: "25px"
+  },
+  AppBar: {
+    backgroundColor: "black",
+
+    color: "white",
+  }
+}));
+
+export default function SimpleTabs() {
+  const classes = useStyles();
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  return (
+    <div id="projects">
+      <h1 className="text-center font-details pb-4">PROJECTS</h1>
+      <div className={classes.root}>
+
+        <AppBar position="static" className={classes.AppBar}>
+          <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
+            <Tab label="All Projects" {...a11yProps(0)} />
+            <Tab label="Full Stack " {...a11yProps(1)} />
+            <Tab label="Videography" {...a11yProps(2)} />
+            <Tab label="IGTV" {...a11yProps(3)} />
+
+          </Tabs>
+        </AppBar>
+        <TabPanel value={value} index={0}>
+          <AllProjects />
+
+        </TabPanel>
+        <TabPanel value={value} index={1}>
+          <FullStackProjects />
+        </TabPanel>
+        <TabPanel value={value} index={2}>
+          <VideographyProjects />
+        </TabPanel>
+        <TabPanel value={value} index={3}>
+          <IGTVProjects />
+        </TabPanel>
+      </div>
+    </div>
+  );
+}

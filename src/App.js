@@ -1,19 +1,20 @@
 // import logo from './logo.svg';
 import React from 'react-bootstrap'
-import { Slide, Fade } from 'react-reveal'
+import { Slide, Fade, Zoom } from 'react-reveal'
 import { Parallax } from 'react-parallax'
 import { Container } from 'react-bootstrap'
 
 //components
 import NavBar from "./components/NavBar/NavBar"
-import Carousel from './pages/AboutMe/Carousel'
 import TitleMessage from './components/TitleMessage/TitleMessage'
-import AboutMe from './components/MeInfo/AboutMe'
+import AboutMe from './pages/AboutMe/AboutMe'
 import Skills from './pages/Skills/Skills'
 import StarWarsCrawl from './components/StarWarsCrawl/StarWarsCrawl'
 import ProjTabs from './components/ProjTabs/ProjTabs'
 import ContactForm from './pages/ContactForm/ContactForm'
 import Footer from './components/Footer/Footer'
+// import ProjectPage from './pages/ProjectPage/ProjectPage'
+import ProjectTabs from './pages/ProjectPage/ProjectPage'
 
 
 
@@ -28,100 +29,51 @@ function App() {
   return (
     <div className="App" style={{ position: "relative" }}>
 
+      {/* sticky NavBar */}
+
+
       <NavBar />
 
-      <div>
-        <Container className="container-box" rounded>
-          <Slide left duration={900}>
-            <StarWarsCrawl />
-
-          </Slide>
-        </Container>
-
-
-      </div>
+      {/* Intro */}
 
       <div>
         <Container className="container-box" rounded>
-          <Slide left duration={900}>
-            <ProjTabs />
-          </Slide>
+          <StarWarsCrawl />
         </Container>
-
-
       </div>
 
+      {/* Projects */}
 
       <div>
         <Container className="container-box" rounded>
-          <Slide left duration={900}>
-          <Carousel />
-          {/* <AboutMe /> */}
-
-          {/* <TitleMessage /> */}
-          </Slide>
+          <Zoom>
+            <ProjectTabs />
+          </Zoom>
         </Container>
-
-
       </div>
 
-      {/* <div>
-        <Container className="container-box" rounded>
-          <Slide left duration={900}>
-            <AboutMe />
-          </Slide>
-        </Container>
-
-
-      </div> */}
-
-      {/* About Me Section */}
-      <div>
-        <Parallax
-          blur={{ min: -30, max: 30 }}
-          // bgImage={require("./assets/img/parallex/background.webp")}
-          bgImageAlt=""
-          strength={-200}
-          className="parallax_background"
-        >
-          <Container className="about-me-container-box" rounded>
-            <Slide left duration={900}>
-              {/* <AboutMe /> */}
-
-            </Slide>
-          </Container>
-
-        </Parallax>
-      </div>
       {/* Skills */}
 
       <div>
         <Container className="container-box" rounded>
-          <Slide left duration={900}>
+          <Zoom>
             <Skills />
-          </Slide>
+          </Zoom>
         </Container>
-
-
       </div>
-      {/* Projects */}
-      {/* <div>
+
+      {/* About Me */}
+
+      <div>
         <Container className="container-box" rounded>
-          <Slide left duration={900}>
-            <Projects />
-          </Slide>
+          <Zoom>
+            <AboutMe />
+          </Zoom>
         </Container>
+      </div>
 
+      {/* Footer */}
 
-      </div> */}
-
-
-      <Container className="container-box rounded">
-        <Fade duration={500}>
-          <hr />
-          <ContactForm />
-        </Fade>
-      </Container>
       <hr />
       <Footer />
     </div>

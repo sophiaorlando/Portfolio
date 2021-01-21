@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 import './ProjTabs.css'
 
-import { myProjects } from '../Projects/ProjectsData'
+import { myProjects } from '../ProjectType/ProjectsData'
 
 class ProjTabs extends Component {
 
@@ -112,12 +112,12 @@ class ProjTabs extends Component {
     return (
       <div className="category-tabs" id="projects" >
         <h1 className="text-center font-details pb-4">PROJECTS</h1>
-<div style={{ backgroundImage: `url("https://images.unsplash.com/photo-1520034475321-cbe63696469a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")`, borderRadius: "25px" }}>
+        <div style={{ backgroundImage: `url("https://images.unsplash.com/photo-1520034475321-cbe63696469a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")`, borderRadius: "25px" }}>
 
 
 
-        <style type="text/css">
-          {`
+          <style type="text/css">
+            {`
           
         .tab-style{
           font-family: 'Pathway Gothic One', sans-serif;
@@ -132,16 +132,16 @@ class ProjTabs extends Component {
           }
           `}
 
-        </style>
+          </style>
 
-        <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple >
-          <Tab className="tab-style">Fullstack</Tab>
-          <Tab className="tab-style">Videography</Tab>
-          <Tab className="tab-style">IGTV</Tab>
+          <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple >
+            <Tab className="tab-style">Fullstack</Tab>
+            <Tab className="tab-style">Videography</Tab>
+            <Tab className="tab-style">IGTV</Tab>
 
-        </Tabs>
+          </Tabs>
 
-        <div className="content">{this.toggleCategories()}</div>
+          <div className="content">{this.toggleCategories()}</div>
         </div>
 
       </div>
